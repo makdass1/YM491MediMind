@@ -81,11 +81,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mustafa\\Desktop\\Yazilim\\App.Repository\\App.API\\App.API.csproj",
+      "projectUniqueName": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\App.API.csproj",
       "projectName": "App.API",
-      "projectPath": "C:\\Users\\Mustafa\\Desktop\\Yazilim\\App.Repository\\App.API\\App.API.csproj",
+      "projectPath": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\App.API.csproj",
       "packagesPath": "C:\\Users\\Mustafa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mustafa\\Desktop\\Yazilim\\App.Repository\\App.API\\obj\\",
+      "outputPath": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

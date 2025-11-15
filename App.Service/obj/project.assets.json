@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mustafa\\Desktop\\Yazilim\\App.Repository\\App.Service\\App.Service.csproj",
+      "projectUniqueName": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\App.Service.csproj",
       "projectName": "App.Service",
-      "projectPath": "C:\\Users\\Mustafa\\Desktop\\Yazilim\\App.Repository\\App.Service\\App.Service.csproj",
+      "projectPath": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\App.Service.csproj",
       "packagesPath": "C:\\Users\\Mustafa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mustafa\\Desktop\\Yazilim\\App.Repository\\App.Service\\obj\\",
+      "outputPath": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
