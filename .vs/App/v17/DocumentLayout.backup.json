@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.repository\\enums\\medicineenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|solutionrelative:app.repository\\enums\\medicineenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.repository\\enums\\frequency_of_useenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|solutionrelative:app.repository\\enums\\frequency_of_useenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.repository\\enums\\chronicdiseasessenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|solutionrelative:app.repository\\enums\\chronicdiseasessenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.repository\\enums\\allergyenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|solutionrelative:app.repository\\enums\\allergyenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.repository\\entities\\reminder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|solutionrelative:app.repository\\entities\\reminder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.repository\\entities\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|solutionrelative:app.repository\\entities\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.repository\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|solutionrelative:app.repository\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.repository\\app.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|solutionrelative:app.repository\\app.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AllergyEnum.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Enums\\AllergyEnum.cs",
+              "RelativeDocumentMoniker": "App.Repository\\Enums\\AllergyEnum.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Enums\\AllergyEnum.cs",
+              "RelativeToolTip": "App.Repository\\Enums\\AllergyEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T22:24:21.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChronicDiseasessEnum.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Enums\\ChronicDiseasessEnum.cs",
+              "RelativeDocumentMoniker": "App.Repository\\Enums\\ChronicDiseasessEnum.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Enums\\ChronicDiseasessEnum.cs",
+              "RelativeToolTip": "App.Repository\\Enums\\ChronicDiseasessEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T22:23:27.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MedicineEnum.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Enums\\MedicineEnum.cs",
+              "RelativeDocumentMoniker": "App.Repository\\Enums\\MedicineEnum.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Enums\\MedicineEnum.cs",
+              "RelativeToolTip": "App.Repository\\Enums\\MedicineEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T22:17:46.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Frequency_of_useEnum.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Enums\\Frequency_of_useEnum.cs",
+              "RelativeDocumentMoniker": "App.Repository\\Enums\\Frequency_of_useEnum.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Enums\\Frequency_of_useEnum.cs",
+              "RelativeToolTip": "App.Repository\\Enums\\Frequency_of_useEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T22:15:17.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.Repository",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\App.Repository.csproj",
+              "RelativeDocumentMoniker": "App.Repository\\App.Repository.csproj",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\App.Repository.csproj",
+              "RelativeToolTip": "App.Repository\\App.Repository.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-15T22:14:40.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Entities\\Doctor.cs",
+              "RelativeDocumentMoniker": "App.Repository\\Entities\\Doctor.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Entities\\Doctor.cs",
+              "RelativeToolTip": "App.Repository\\Entities\\Doctor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T22:03:46.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Reminder.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Entities\\Reminder.cs",
+              "RelativeDocumentMoniker": "App.Repository\\Entities\\Reminder.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Entities\\Reminder.cs",
+              "RelativeToolTip": "App.Repository\\Entities\\Reminder.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T22:02:11.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "App.Repository\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Entities\\User.cs",
+              "RelativeToolTip": "App.Repository\\Entities\\User.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAASwBQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T21:58:12.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
