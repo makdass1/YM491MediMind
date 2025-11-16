@@ -6,8 +6,14 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Repository", "App.Repository\App.Repository.csproj", "{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Service", "App.Service\App.Service.csproj", "{F8A04E18-8BDF-4EAC-A2EA-2DC5B53CF83E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1520B775-E3B6-46F2-BE9D-A3F9A1B39314} = {1520B775-E3B6-46F2-BE9D-A3F9A1B39314}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.API", "App.API\App.API.csproj", "{D6DA7110-3651-4CE9-969B-D0FF2064B03A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F8A04E18-8BDF-4EAC-A2EA-2DC5B53CF83E} = {F8A04E18-8BDF-4EAC-A2EA-2DC5B53CF83E}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

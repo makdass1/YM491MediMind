@@ -1,5 +1,4 @@
-﻿using App.Repository.Enums;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,10 +14,10 @@ namespace App.Repository.Entities
         public string Password { get; set; } = default!;
         public int Age { get; set; }
         public bool Gender { get; set; }
-        public ICollection<ChronicDiseasessEnum>? chronicDiseasesses { get; set; }
-        public ICollection<MedicineEnum>? medicines { get; set; }
+        public ICollection<ChronicDiseasess>? chronicDiseasesses { get; set; }
+        public ICollection<Medicine>? medicines { get; set; }
         public ICollection<Reminder>? reminders { get; set; }
-        public ICollection<AllergyEnum>? allergies { get; set; }
+        public ICollection<Allergy>? allergies { get; set; }
 
 
     }
