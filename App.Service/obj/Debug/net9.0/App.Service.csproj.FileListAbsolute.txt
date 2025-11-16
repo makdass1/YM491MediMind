@@ -1,0 +1,12 @@
+C:\Users\Mustafa\Desktop\GITHUB\YM491MediMind\App.Service\bin\Debug\net9.0\App.Service.deps.json
+C:\Users\Mustafa\Desktop\GITHUB\YM491MediMind\App.Service\bin\Debug\net9.0\App.Service.dll
+C:\Users\Mustafa\Desktop\GITHUB\YM491MediMind\App.Service\bin\Debug\net9.0\App.Service.pdb
+C:\Users\Mustafa\Desktop\GITHUB\YM491MediMind\App.Service\obj\Debug\net9.0\App.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mustafa\Desktop\GITHUB\YM491MediMind\App.Service\obj\Debug\net9.0\App.Service.AssemblyInfoInputs.cache
+C:\Users\Mustafa\Desktop\GITHUB\YM491MediMind\App.Service\obj\Debug\net9.0\App.Service.AssemblyInfo.cs
+C:\Users\Mustafa\Desktop\GITHUB\YM491MediMind\App.Service\obj\Debug\net9.0\App.Service.csproj.CoreCompileInputs.cache
+C:\Users\Mustafa\Desktop\GITHUB\YM491MediMind\App.Service\obj\Debug\net9.0\App.Service.sourcelink.json
+C:\Users\Mustafa\Desktop\GITHUB\YM491MediMind\App.Service\obj\Debug\net9.0\App.Service.dll
+C:\Users\Mustafa\Desktop\GITHUB\YM491MediMind\App.Service\obj\Debug\net9.0\refint\App.Service.dll
+C:\Users\Mustafa\Desktop\GITHUB\YM491MediMind\App.Service\obj\Debug\net9.0\App.Service.pdb
+C:\Users\Mustafa\Desktop\GITHUB\YM491MediMind\App.Service\obj\Debug\net9.0\ref\App.Service.dll

@@ -1,5 +1,4 @@
-﻿using App.Repository.Enums;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,8 +13,12 @@ namespace App.Repository.Entities
         public string Dosage { get; set; } = default!;
         public DateTime Start_date { get; set; }
         public DateTime Finish_date { get; set; }
-        public MedicineEnum MedicineEnum { get; set; }= default!;
-        public Frequency_of_useEnum Frequency_of_useEnum { get; set; } = default!;
+        public Medicine Medicine { get; set; }= default!;
+        public int MedicineId { get; set; }
+        public Frequency_of_use Frequency_of_use { get; set; } = default!;
+        public int Frequency_of_useId { get; set; }
+        public int UserId { get; set; }
+        public User User { get; set; } = default!;
         public string Note { get; set; } = default!;
     }
 }
