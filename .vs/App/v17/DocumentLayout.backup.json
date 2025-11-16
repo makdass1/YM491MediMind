@@ -1,0 +1,262 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.repository\\migrations\\20251116202112_mig1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|solutionrelative:app.repository\\migrations\\20251116202112_mig1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.repository\\configs\\allergyconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|solutionrelative:app.repository\\configs\\allergyconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.repository\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|solutionrelative:app.repository\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6DA7110-3651-4CE9-969B-D0FF2064B03A}|App.API\\App.API.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6DA7110-3651-4CE9-969B-D0FF2064B03A}|App.API\\App.API.csproj|solutionrelative:app.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6DA7110-3651-4CE9-969B-D0FF2064B03A}|App.API\\App.API.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.api\\app.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D6DA7110-3651-4CE9-969B-D0FF2064B03A}|App.API\\App.API.csproj|solutionrelative:app.api\\app.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.repository\\extensions\\repositoryext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|solutionrelative:app.repository\\extensions\\repositoryext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6DA7110-3651-4CE9-969B-D0FF2064B03A}|App.API\\App.API.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D6DA7110-3651-4CE9-969B-D0FF2064B03A}|App.API\\App.API.csproj|solutionrelative:app.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.repository\\app.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|solutionrelative:app.repository\\app.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.repository\\configs\\medicineconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|solutionrelative:app.repository\\configs\\medicineconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.repository\\configs\\doctorconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|solutionrelative:app.repository\\configs\\doctorconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.repository\\configs\\chronicdiseasessconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|solutionrelative:app.repository\\configs\\chronicdiseasessconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.repository\\configs\\frequencyofuseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|solutionrelative:app.repository\\configs\\frequencyofuseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.repository\\configs\\reminderconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|solutionrelative:app.repository\\configs\\reminderconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.repository\\entities\\reminder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1520B775-E3B6-46F2-BE9D-A3F9A1B39314}|App.Repository\\App.Repository.csproj|solutionrelative:app.repository\\entities\\reminder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20251116202112_Mig1.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Migrations\\20251116202112_Mig1.cs",
+              "RelativeDocumentMoniker": "App.Repository\\Migrations\\20251116202112_Mig1.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Migrations\\20251116202112_Mig1.cs",
+              "RelativeToolTip": "App.Repository\\Migrations\\20251116202112_Mig1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T20:21:19.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.API",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\App.API.csproj",
+              "RelativeDocumentMoniker": "App.API\\App.API.csproj",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\App.API.csproj",
+              "RelativeToolTip": "App.API\\App.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-16T20:18:52.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\appsettings.json",
+              "RelativeDocumentMoniker": "App.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\appsettings.json",
+              "RelativeToolTip": "App.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAACXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-16T20:15:28.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "App.Repository\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\AppDbContext.cs",
+              "RelativeToolTip": "App.Repository\\AppDbContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T20:11:52.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\Program.cs",
+              "RelativeDocumentMoniker": "App.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\Program.cs",
+              "RelativeToolTip": "App.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T20:07:05.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RepositoryExt.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Extensions\\RepositoryExt.cs",
+              "RelativeDocumentMoniker": "App.Repository\\Extensions\\RepositoryExt.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Extensions\\RepositoryExt.cs",
+              "RelativeToolTip": "App.Repository\\Extensions\\RepositoryExt.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAwwBcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T20:05:08.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.Repository",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\App.Repository.csproj",
+              "RelativeDocumentMoniker": "App.Repository\\App.Repository.csproj",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\App.Repository.csproj",
+              "RelativeToolTip": "App.Repository\\App.Repository.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-16T20:04:25.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MedicineConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Configs\\MedicineConfig.cs",
+              "RelativeDocumentMoniker": "App.Repository\\Configs\\MedicineConfig.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Configs\\MedicineConfig.cs",
+              "RelativeToolTip": "App.Repository\\Configs\\MedicineConfig.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T19:58:44.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DoctorConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Configs\\DoctorConfig.cs",
+              "RelativeDocumentMoniker": "App.Repository\\Configs\\DoctorConfig.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Configs\\DoctorConfig.cs",
+              "RelativeToolTip": "App.Repository\\Configs\\DoctorConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T19:56:12.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ChronicDiseasessConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Configs\\ChronicDiseasessConfig.cs",
+              "RelativeDocumentMoniker": "App.Repository\\Configs\\ChronicDiseasessConfig.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Configs\\ChronicDiseasessConfig.cs",
+              "RelativeToolTip": "App.Repository\\Configs\\ChronicDiseasessConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T19:50:07.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FrequencyOfUseConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Configs\\FrequencyOfUseConfig.cs",
+              "RelativeDocumentMoniker": "App.Repository\\Configs\\FrequencyOfUseConfig.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Configs\\FrequencyOfUseConfig.cs",
+              "RelativeToolTip": "App.Repository\\Configs\\FrequencyOfUseConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T19:45:14.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ReminderConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Configs\\ReminderConfig.cs",
+              "RelativeDocumentMoniker": "App.Repository\\Configs\\ReminderConfig.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Configs\\ReminderConfig.cs",
+              "RelativeToolTip": "App.Repository\\Configs\\ReminderConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T19:40:35.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Reminder.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Entities\\Reminder.cs",
+              "RelativeDocumentMoniker": "App.Repository\\Entities\\Reminder.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Entities\\Reminder.cs",
+              "RelativeToolTip": "App.Repository\\Entities\\Reminder.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T18:19:59.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AllergyConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Configs\\AllergyConfig.cs",
+              "RelativeDocumentMoniker": "App.Repository\\Configs\\AllergyConfig.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\Configs\\AllergyConfig.cs",
+              "RelativeToolTip": "App.Repository\\Configs\\AllergyConfig.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T17:41:58.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
