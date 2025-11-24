@@ -60,37 +60,252 @@ namespace App.Repository.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "Fıstık Alerjisi"
+                            Name = "Aspirin Alerjisi"
                         },
                         new
                         {
                             Id = 2,
-                            Name = "Gluten Alerjisi"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Name = "Süt Ürünleri Alerjisi"
-                        },
-                        new
-                        {
-                            Id = 4,
                             Name = "Çilek Alerjisi"
                         },
                         new
                         {
+                            Id = 3,
+                            Name = "Fıstık Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Gluten Alerjisi"
+                        },
+                        new
+                        {
                             Id = 5,
-                            Name = "Yumurta Alerjisi"
+                            Name = "İyot Alerjisi"
                         },
                         new
                         {
                             Id = 6,
-                            Name = "Polen Alerjisi"
+                            Name = "Kabuklu Deniz Ürünleri Alerjisi"
                         },
                         new
                         {
                             Id = 7,
-                            Name = "Kakao"
+                            Name = "Kakao Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Name = "Küf Mantarı Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Name = "Lateks Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Name = "Mantar Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Name = "Morfin Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Name = "Nikel Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Name = "Penisilin Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Name = "Polen Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Name = "Süt Ürünleri Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Name = "Soya Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            Name = "Şeftali Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            Name = "Tuzlu Su Balıkları Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Name = "Vanilya Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Name = "Yumurta Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 21,
+                            Name = "Yer Fıstığı Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 22,
+                            Name = "Çam Pollen Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 23,
+                            Name = "Fındık Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 24,
+                            Name = "Kaju Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 25,
+                            Name = "Keten Tohumu Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 26,
+                            Name = "Kuruyemiş Karışımı Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 27,
+                            Name = "Lavanta Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 28,
+                            Name = "Mercimek Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 29,
+                            Name = "Mısır Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 30,
+                            Name = "Okyanus Balıkları Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 31,
+                            Name = "Pirinç Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 32,
+                            Name = "Sarımsak Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 33,
+                            Name = "Sedef Hastalığına Bağlı Alerji"
+                        },
+                        new
+                        {
+                            Id = 34,
+                            Name = "Somon Balığı Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 35,
+                            Name = "Susam Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 36,
+                            Name = "Tuzlu Su Karidesi Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 37,
+                            Name = "Un Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 38,
+                            Name = "Vanilya Fasulyesi Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 39,
+                            Name = "Vişne Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 40,
+                            Name = "Yaban Mersini Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 41,
+                            Name = "Yeşil Mercimek Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 42,
+                            Name = "Yosun Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 43,
+                            Name = "Zencefil Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 44,
+                            Name = "Zeytin Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 45,
+                            Name = "Ev Tozu Akarı Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 46,
+                            Name = "Kedi Tüyü Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 47,
+                            Name = "Köpek Tüyü Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 48,
+                            Name = "Saman Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 49,
+                            Name = "Meyve Karışımı Alerjisi"
+                        },
+                        new
+                        {
+                            Id = 50,
+                            Name = "Sebze Karışımı Alerjisi"
                         });
                 });
 
@@ -112,6 +327,248 @@ namespace App.Repository.Migrations
                         .IsUnique();
 
                     b.ToTable("ChronicDiseasesses");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Alzheimer"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Akciğer Kanseri"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Anemi (Kronik)"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Astım"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "Böbrek Yetmezliği"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Name = "Crohn Hastalığı"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Name = "Diyabet"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Name = "Epilepsi"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Name = "Fibromiyalji"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Name = "Hiperkolesterolemi"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Name = "Hipertansiyon"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Name = "Hipotiroidi"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Name = "Hipertiroidi"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Name = "Kalp Yetmezliği"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Name = "Kanser"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Name = "Kolorektal Kanser"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            Name = "KOAH"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            Name = "Koroner Arter Hastalığı"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Name = "Kronik Akciğer Hastalığı"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Name = "Kronik Böbrek Hastalığı"
+                        },
+                        new
+                        {
+                            Id = 21,
+                            Name = "Kronik Depresyon"
+                        },
+                        new
+                        {
+                            Id = 22,
+                            Name = "Kronik Enfeksiyonlar (HIV, Hepatit B/C)"
+                        },
+                        new
+                        {
+                            Id = 23,
+                            Name = "Kronik Göz Hastalıkları (Glokom, Katarakt)"
+                        },
+                        new
+                        {
+                            Id = 24,
+                            Name = "Kronik Karaciğer Hastalığı"
+                        },
+                        new
+                        {
+                            Id = 25,
+                            Name = "Kronik Migren"
+                        },
+                        new
+                        {
+                            Id = 26,
+                            Name = "Kronik Pancreatit"
+                        },
+                        new
+                        {
+                            Id = 27,
+                            Name = "Kronik Sinüzit"
+                        },
+                        new
+                        {
+                            Id = 28,
+                            Name = "Kronik Yorgunluk Sendromu"
+                        },
+                        new
+                        {
+                            Id = 29,
+                            Name = "Kronik Dermatolojik Hastalıklar"
+                        },
+                        new
+                        {
+                            Id = 30,
+                            Name = "Lupus"
+                        },
+                        new
+                        {
+                            Id = 31,
+                            Name = "Meme Kanseri"
+                        },
+                        new
+                        {
+                            Id = 32,
+                            Name = "Migren"
+                        },
+                        new
+                        {
+                            Id = 33,
+                            Name = "Multipl Skleroz (MS)"
+                        },
+                        new
+                        {
+                            Id = 34,
+                            Name = "Multiple Myeloma"
+                        },
+                        new
+                        {
+                            Id = 35,
+                            Name = "Obezite"
+                        },
+                        new
+                        {
+                            Id = 36,
+                            Name = "Osteoartrit"
+                        },
+                        new
+                        {
+                            Id = 37,
+                            Name = "Parkinson"
+                        },
+                        new
+                        {
+                            Id = 38,
+                            Name = "Prostat Kanseri"
+                        },
+                        new
+                        {
+                            Id = 39,
+                            Name = "Psoriatik Artrit"
+                        },
+                        new
+                        {
+                            Id = 40,
+                            Name = "Romatoid Artrit"
+                        },
+                        new
+                        {
+                            Id = 41,
+                            Name = "Siroz"
+                        },
+                        new
+                        {
+                            Id = 42,
+                            Name = "Uyku Apnesi"
+                        },
+                        new
+                        {
+                            Id = 43,
+                            Name = "Pulmoner Fibroz"
+                        },
+                        new
+                        {
+                            Id = 44,
+                            Name = "Kronik Anksiyete"
+                        },
+                        new
+                        {
+                            Id = 45,
+                            Name = "Kronik Böbrek Yetmezliği"
+                        },
+                        new
+                        {
+                            Id = 46,
+                            Name = "Kronik Karaciğer Yetmezliği"
+                        },
+                        new
+                        {
+                            Id = 47,
+                            Name = "Kronik Panik Bozukluğu"
+                        },
+                        new
+                        {
+                            Id = 48,
+                            Name = "Kronik Romatizmal Hastalıklar"
+                        });
                 });
 
             modelBuilder.Entity("App.Repository.Entities.Doctor", b =>
