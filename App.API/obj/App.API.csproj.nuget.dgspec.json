@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rabia\\YM491MediMind\\App.API\\App.API.csproj": {}
+    "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\App.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rabia\\YM491MediMind\\App.API\\App.API.csproj": {
+    "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\App.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rabia\\YM491MediMind\\App.API\\App.API.csproj",
+        "projectUniqueName": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\App.API.csproj",
         "projectName": "App.API",
-        "projectPath": "C:\\Users\\Rabia\\YM491MediMind\\App.API\\App.API.csproj",
-        "packagesPath": "C:\\Users\\Rabia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rabia\\YM491MediMind\\App.API\\obj\\",
+        "projectPath": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\App.API.csproj",
+        "packagesPath": "C:\\Users\\Mustafa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Rabia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mustafa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,14 +26,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Rabia\\YM491MediMind\\App.Repository\\App.Repository.csproj": {
-                "projectPath": "C:\\Users\\Rabia\\YM491MediMind\\App.Repository\\App.Repository.csproj"
+              "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\App.Repository.csproj": {
+                "projectPath": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\App.Repository.csproj"
+              },
+              "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\App.Service.csproj": {
+                "projectPath": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\App.Service.csproj"
               }
             }
           }
@@ -48,12 +52,20 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[14.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.2, )"
@@ -64,13 +76,13 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.21.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Swashbuckle.AspNetCore.Swagger": {
-              "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.1, )"
             }
           },
           "imports": [
@@ -84,6 +96,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[9.0.2, 9.0.2]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[9.0.2, 9.0.2]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[9.0.2, 9.0.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -92,24 +118,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     },
-    "C:\\Users\\Rabia\\YM491MediMind\\App.Repository\\App.Repository.csproj": {
+    "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\App.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rabia\\YM491MediMind\\App.Repository\\App.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\App.Repository.csproj",
         "projectName": "App.Repository",
-        "projectPath": "C:\\Users\\Rabia\\YM491MediMind\\App.Repository\\App.Repository.csproj",
-        "packagesPath": "C:\\Users\\Rabia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rabia\\YM491MediMind\\App.Repository\\obj\\",
+        "projectPath": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\App.Repository.csproj",
+        "packagesPath": "C:\\Users\\Mustafa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Rabia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mustafa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -118,6 +149,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -136,7 +168,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -172,7 +204,99 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\App.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\App.Service.csproj",
+        "projectName": "App.Service",
+        "projectPath": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\App.Service.csproj",
+        "packagesPath": "C:\\Users\\Mustafa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Mustafa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\App.Repository.csproj": {
+                "projectPath": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Repository\\App.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[15.0.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[14.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,164 @@
+name: dockercompose10224974978582138795
+services:
+  app.api:
+    build:
+      context: C:\Users\Mustafa\Desktop\GITHUB\YM491MediMind
+      dockerfile: App.API/docker-file
+      args:
+        BUILD_CONFIGURATION: Debug
+        LAUNCHING_FROM_VS: "true"
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: App.API
+      target: base
+    container_name: app_api_container
+    depends_on:
+      keycloak:
+        condition: service_started
+        required: true
+      mssql:
+        condition: service_started
+        required: true
+    entrypoint:
+      - dotnet
+      - --roll-forward
+      - Major
+      - /VSTools/DistrolessHelper/DistrolessHelper.dll
+      - --wait
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ConnectionStrings__DefaultConnection: Server=mssql,1433;Database=MyDb;User Id=sa;Password=SizinGucluSifreniz1!;TrustServerCertificate=True;
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      JwtOptions__Authority: http://keycloak:8080/realms/MediMind
+      JwtOptions__MetadataAddress: http://keycloak:8080/realms/MediMind/.well-known/openid-configuration
+      JwtOptions__ValidIssuer: http://localhost:8080/realms/MediMind
+      NUGET_FALLBACK_PACKAGES: /.nuget/fallbackpackages
+    image: appapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/bin/Debug/net9.0/App.API.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "5127"
+        protocol: tcp
+    tty: true
+    volumes:
+      - type: bind
+        source: C:\Users\Mustafa\Desktop\GITHUB\YM491MediMind\App.API
+        target: /app
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\Mustafa\Desktop\GITHUB\YM491MediMind
+        target: /src
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\Mustafa\vsdbg\vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\Mustafa\.nuget\packages
+        target: /.nuget/packages
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages
+        target: /.nuget/fallbackpackages
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\Mustafa\AppData\Roaming\ASP.NET\Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\Mustafa\AppData\Roaming\ASP.NET\Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\Mustafa\AppData\Roaming\Microsoft\UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\Mustafa\AppData\Roaming\Microsoft\UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\linux-x64\net6.0
+        target: /VSTools
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
+        target: /HotReloadAgent
+        read_only: true
+        bind:
+          create_host_path: true
+  keycloak:
+    command:
+      - start-dev
+      - --import-realm
+    container_name: keycloak
+    depends_on:
+      mssql:
+        condition: service_started
+        required: true
+    environment:
+      KC_DB: mssql
+      KC_DB_PASSWORD: SizinGucluSifreniz1!
+      KC_DB_URL: jdbc:sqlserver://mssql:1433;databaseName=keycloak;encrypt=false;trustServerCertificate=true
+      KC_DB_USERNAME: sa
+      KC_HOSTNAME: localhost
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+    image: quay.io/keycloak/keycloak:26.0
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8080"
+        protocol: tcp
+  mssql:
+    container_name: keycloak-mssql
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Express
+      MSSQL_SA_PASSWORD: SizinGucluSifreniz1!
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1433"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: mssql_data
+        target: /var/opt/mssql
+        volume: {}
+networks:
+  default:
+    name: dockercompose10224974978582138795_default
+volumes:
+  mssql_data:
+    name: dockercompose10224974978582138795_mssql_data

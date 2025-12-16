@@ -1,0 +1,33 @@
+﻿FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
+WORKDIR /app
+EXPOSE 8080
+EXPOSE 8081
+
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+ARG BUILD_CONFIGURATION=Release
+WORKDIR /src
+
+# 1. Tüm .csproj dosyalarını kopyalıyoruz 
+# (Ana dizinden baktığımız için yollar: KlasörAdı/DosyaAdı.csproj şeklinde olmalı)
+COPY ["App.API/App.API.csproj", "App.API/"]
+COPY ["App.Service/App.Service.csproj", "App.Service/"]
+COPY ["App.Repository/App.Repository.csproj", "App.Repository/"]
+
+# 2. Restore işlemi (API restore edilirken diğerleri de zincirleme çözülür)
+RUN dotnet restore "App.API/App.API.csproj"
+
+# 3. Kalan tüm dosyaları kopyala (Tüm proje ana dizini -> /src içine)
+COPY . .
+
+# 4. Build işlemi için API klasörüne odaklan
+WORKDIR "/src/App.API"
+RUN dotnet build "App.API.csproj" -c $BUILD_CONFIGURATION -o /app/build
+
+FROM build AS publish
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "App.API.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "App.API.dll"]

@@ -11,6 +11,7 @@ namespace App.Repository.Entities
         public string Name { get; set; } = default!;
         public string Surname { get; set; } = default!;
         public string Registiration_number{ get; set; } = default!;
+        public string Password { get; set; } = default!;
 
 
     }

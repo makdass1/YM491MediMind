@@ -584,6 +584,10 @@ namespace App.Repository.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Registiration_number")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
