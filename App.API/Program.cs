@@ -13,11 +13,12 @@ var authSettings = builder.Configuration.GetSection("JwtOptions");
 var metadataAddress = authSettings["MetadataAddress"];
 var validIssuer = authSettings["ValidIssuer"];
 
-
-builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddHttpClient();
-builder.Services.AddScoped<KeycloakAdminService>();
+builder.Services.AddHttpClient<KeycloakAdminService>();
+
+builder.Services.AddControllers();
+
 // 🔥 Swagger JWT Ayarı
 builder.Services.AddSwaggerGen(c =>
 {

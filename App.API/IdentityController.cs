@@ -1,73 +1,25 @@
-﻿using App.Service.Services;
-using App.Repository.Entities;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using App.Service.Services;
+using App.Service.Dtos;
 
-
-
-[ApiController]
-[Route("api/identity")]
-public class IdentityController : ControllerBase
+namespace App.API.Controllers
 {
-    private readonly KeycloakAdminService _keycloakService;
-
-    public IdentityController(KeycloakAdminService keycloakService)
+    [ApiController]
+    [Route("api/identity")]
+    public class IdentityController : ControllerBase
     {
-        _keycloakService = keycloakService;
-    }
+        private readonly KeycloakAdminService _service;
 
-
-    // 1️⃣ USER CREATE
-    [HttpPost("user")]
-    public async Task<IActionResult> CreateUser(User request)
-    {
-        var payload = new
+        public IdentityController(KeycloakAdminService service)
         {
-            
-            email = request.Mail,
-            firstName = request.Name,
-            lastName = request.LastName,
-            enabled = true,
-            credentials = new[]
-            {
-                new
-                {
-                    type = "password",
-                    value = request.Password,
-                    temporary = false
-                }
-            }
-        };
+            _service = service;
+        }
 
-        await _keycloakService.CreateUserAsync(payload);
-
-        return Ok("User created");
-    }
-
-    // 2️⃣ DOCTOR CREATE
-    [HttpPost("doctor")]
-    public async Task<IActionResult> CreateDoctor(Doctor request)
-    {
-        var payload = new
+        [HttpPost("register")]
+        public async Task<IActionResult> Register(RegisterRequest request)
         {
-            username = request.Registiration_number,
-            enabled = true,
-            attributes = new Dictionary<string, string[]>
-            {
-                ["registrationNumber"] = new[] { request.Registiration_number }
-            },
-            credentials = new[]
-            {
-                new
-                {
-                    type = "password",
-                    value = request.Password,
-                    temporary = false
-                }
-            }
-        };
-
-        await _keycloakService.CreateUserAsync(payload);
-
-        return Ok("Doctor created");
+            await _service.RegisterAsync(request);
+            return Ok("Registered & role assigned");
+        }
     }
 }

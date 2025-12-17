@@ -1,31 +1,15 @@
 [
   {
-    "ContainingType": "IdentityController",
-    "Method": "CreateDoctor",
-    "RelativePath": "api/identity/doctor",
+    "ContainingType": "App.API.Controllers.IdentityController",
+    "Method": "Register",
+    "RelativePath": "api/identity/register",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "request",
-        "Type": "App.Repository.Entities.Doctor",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "IdentityController",
-    "Method": "CreateUser",
-    "RelativePath": "api/identity/user",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "App.Repository.Entities.User",
+        "Type": "App.Service.Dtos.RegisterRequest",
         "IsRequired": true
       }
     ],
