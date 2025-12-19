@@ -57,13 +57,15 @@ namespace App.Service.Services
             // 👤 USER CREATE
             var userPayload = new
             {
+                firstName=request.Name,
+                lastName=request.Surname,
                 username = request.Email,
                 email = request.Email,
                 enabled = true,
                 attributes = request.Role == "doctor"
                     ? new Dictionary<string, string[]>
                     {
-                        ["registrationNumber"] = new[] { request.RegistrationNumber! }
+                        ["Registiration_number"] = new[] { request.RegistrationNumber! }
                     }
                     : null,
                 credentials = new[]

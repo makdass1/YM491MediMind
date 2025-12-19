@@ -16,7 +16,7 @@ var validIssuer = authSettings["ValidIssuer"];
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddHttpClient();
 builder.Services.AddHttpClient<KeycloakAdminService>();
-
+builder.Services.AddHttpClient<KeycloakAuthService>();
 builder.Services.AddControllers();
 
 // 🔥 Swagger JWT Ayarı

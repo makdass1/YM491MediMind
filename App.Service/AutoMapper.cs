@@ -17,7 +17,7 @@ namespace App.Service.Mapping
             CreateMap<ReminderCreateInputModel, Reminder>();
             CreateMap<Reminder, ReminderCreateOutputModel>();
             CreateMap<Reminder, ReminderListOutputModel>().ReverseMap();
-            CreateMap<UserRegisterRequest, User>();
+          
 
         }
     }

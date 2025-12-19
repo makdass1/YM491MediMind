@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "App.API.AuthController",
+    "Method": "DoctorLogin",
+    "RelativePath": "api/auth/login/doctor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "App.Service.Dtos.DoctorLoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "App.API.AuthController",
+    "Method": "UserLogin",
+    "RelativePath": "api/auth/login/user",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "App.Service.Dtos.UserLoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "App.API.Controllers.IdentityController",
     "Method": "Register",
     "RelativePath": "api/identity/register",
