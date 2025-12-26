@@ -24,6 +24,9 @@ services:
     image: quay.io/keycloak/keycloak:26.0
     container_name: keycloak
     command: start-dev --import-realm
+    volumes:
+            - ./keycloak/import:/opt/keycloak/data/import
+
     environment:
       KC_DB: mssql
       KC_DB_URL: jdbc:sqlserver://mssql:1433;databaseName=keycloak;encrypt=false;trustServerCertificate=true

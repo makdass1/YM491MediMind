@@ -1,6 +1,8 @@
-﻿using App.Repository.Extensions;
+﻿using App.Repository;
+using App.Repository.Extensions;
 using App.Service.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
@@ -17,6 +19,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddHttpClient();
 builder.Services.AddHttpClient<KeycloakAdminService>();
 builder.Services.AddHttpClient<KeycloakAuthService>();
+builder.Services.AddDbContext<AppDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"));
+});
 builder.Services.AddControllers();
 
 // 🔥 Swagger JWT Ayarı

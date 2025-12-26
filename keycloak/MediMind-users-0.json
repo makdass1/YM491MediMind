@@ -1,0 +1,442 @@
+{
+  "realm" : "MediMind",
+  "users" : [ {
+    "id" : "9e6dc906-1192-4f51-b2ec-18185dfcbed7",
+    "username" : "1234567809",
+    "emailVerified" : false,
+    "createdTimestamp" : 1765921891282,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "a86b9480-16e7-45c5-89b9-d18746f89757",
+      "type" : "password",
+      "createdDate" : 1765921891394,
+      "secretData" : "{\"value\":\"CQHCFKzzB6rOn35H6YTRMEBT7lkigCVtqrGTs3iEXHI=\",\"salt\":\"d7RDh3U56if3cExas5Bnxg==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-medimind" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "960080af-d1dd-41cd-8cda-0fff7066cb12",
+    "username" : "auth@gmail.com",
+    "firstName" : "ad",
+    "lastName" : "as",
+    "email" : "auth@gmail.com",
+    "emailVerified" : true,
+    "createdTimestamp" : 1766171456224,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "fe492feb-bfa3-4c92-be12-cca69c75a3bc",
+      "type" : "password",
+      "createdDate" : 1766171456268,
+      "secretData" : "{\"value\":\"hiBa+J3VaKZ1qtTJqdcJonilerjfk6kE1USDtj7/zcM=\",\"salt\":\"rT7FFBl66iZmfjtUkTunJg==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-medimind", "User" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "0c3756b1-b521-4747-a9fd-0eb2652162d7",
+    "username" : "doctorauth@gmail.com",
+    "firstName" : "identity",
+    "lastName" : "test",
+    "email" : "doctorauth@gmail.com",
+    "emailVerified" : false,
+    "createdTimestamp" : 1766174513880,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "6c65da81-ea9c-4a49-8ffa-ca0e8a5e7386",
+      "type" : "password",
+      "createdDate" : 1766174513899,
+      "secretData" : "{\"value\":\"QLVd4zlgKI2LRKzJKw2CeF0+R4YAcfbd1VV63ab3xcs=\",\"salt\":\"6UaaM5qWIrkWez1mOSnU1A==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-medimind", "Doctor" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "97ccb989-da56-4d0c-ac70-08740a0853e4",
+    "username" : "doctorauth1@gmail.com",
+    "firstName" : "identity",
+    "lastName" : "test",
+    "email" : "doctorauth1@gmail.com",
+    "emailVerified" : false,
+    "attributes" : {
+      "Registiration_number" : [ "3692581470" ]
+    },
+    "createdTimestamp" : 1766174884603,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "257025d5-d778-41a7-ba86-61f6be006bf4",
+      "type" : "password",
+      "createdDate" : 1766174884623,
+      "secretData" : "{\"value\":\"/YvibauZVs6s4pdwoZW0BNxgWzvoDKaRLuKk3zjp8/s=\",\"salt\":\"9CQcvi8CXCyrTO6ekhfekA==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-medimind", "Doctor" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "75f1a4fa-d8a7-4429-b242-219b3a81a23d",
+    "username" : "doktor_test",
+    "firstName" : "Mustafa",
+    "lastName" : "Akdaş",
+    "email" : "makdas163@gmail.com",
+    "emailVerified" : false,
+    "attributes" : {
+      "Registiration_number" : [ "1234567899" ]
+    },
+    "createdTimestamp" : 1765057159187,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "7638c166-f512-483b-8ce1-97b2730ea55a",
+      "type" : "password",
+      "userLabel" : "My password",
+      "createdDate" : 1765057404112,
+      "secretData" : "{\"value\":\"4Wm4iMvenuJOm0Aa00BJVnmtauZqUcHEAl3z9AWd/Dc=\",\"salt\":\"tIBA4S0pFcbZIkeUeOHK1A==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-medimind" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "3dc57313-108f-4856-aedd-d35bd91f63f4",
+    "username" : "e2skisehir@gmail.com",
+    "firstName" : "lina",
+    "lastName" : "bulut",
+    "email" : "e2skisehir@gmail.com",
+    "emailVerified" : false,
+    "attributes" : {
+      "Registiration_number" : [ "1234567890" ]
+    },
+    "createdTimestamp" : 1766692548453,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "bb354684-abb6-4b7c-8bfe-de0b5e1fcc24",
+      "type" : "password",
+      "createdDate" : 1766692548490,
+      "secretData" : "{\"value\":\"Jwm/OY/pA+G53nMHEc9x1us7BozUXWcGaBFhfNZq4do=\",\"salt\":\"AQPC9fJQUTdbeqTv1D/kkg==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-medimind", "Doctor" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "12cbb673-a0bf-434b-9186-c35a943a3de7",
+    "username" : "e2wskisehir@gmail.com",
+    "firstName" : "lina",
+    "lastName" : "bulut",
+    "email" : "e2wskisehir@gmail.com",
+    "emailVerified" : false,
+    "attributes" : {
+      "Registiration_number" : [ "1234567890" ]
+    },
+    "createdTimestamp" : 1766692723242,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "243b47bd-abd1-420a-a407-d8c21434e34a",
+      "type" : "password",
+      "createdDate" : 1766692723266,
+      "secretData" : "{\"value\":\"iWeQRp4I/MhPqcQurSW0+IDmfnDqmHfU8Zs+z1vhbXM=\",\"salt\":\"uuoQaIZuPM6H3fRw2WTmHg==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-medimind", "Doctor" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "2b69874f-fb89-4bb3-9575-4a30298067b1",
+    "username" : "e2wskisehirr@gmail.com",
+    "firstName" : "lina",
+    "lastName" : "bulut",
+    "email" : "e2wskisehirr@gmail.com",
+    "emailVerified" : false,
+    "attributes" : {
+      "Registiration_number" : [ "1234567890" ]
+    },
+    "createdTimestamp" : 1766692780488,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "62e67667-ebec-4b5c-a4e5-a02bc033d334",
+      "type" : "password",
+      "createdDate" : 1766692780506,
+      "secretData" : "{\"value\":\"i0oVH6PSuF7nVnRnBGwmnrwc/9Q8y9fIapamFTzOrKI=\",\"salt\":\"vN7zIK4PwnX6mJCQIkasAA==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-medimind", "Doctor" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "65d2740b-d322-42b2-89f5-63f5573b0006",
+    "username" : "elma@gmail.com",
+    "firstName" : "doktorum",
+    "lastName" : "elmacı",
+    "email" : "elma@gmail.com",
+    "emailVerified" : true,
+    "attributes" : {
+      "Registiration_number" : [ "1472583690" ]
+    },
+    "createdTimestamp" : 1766175842438,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "0267e637-80b3-4b27-9994-5edfdd015e7f",
+      "type" : "password",
+      "createdDate" : 1766175842462,
+      "secretData" : "{\"value\":\"nCKRZjF11MlkBcK1LYhctLPBgrXWNT+7hlgEDhI9OR4=\",\"salt\":\"k8HJEruS5joSv2R1QyY/mQ==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-medimind", "Doctor" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "911afc2a-2494-4020-8b49-8cef03bfc6b2",
+    "username" : "eskisehir@gmail.com",
+    "firstName" : "lina",
+    "lastName" : "bulut",
+    "email" : "eskisehir@gmail.com",
+    "emailVerified" : false,
+    "attributes" : {
+      "Registiration_number" : [ "1234567890" ]
+    },
+    "createdTimestamp" : 1766692470233,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "0a99b45d-35af-4c64-99ff-befbae24339f",
+      "type" : "password",
+      "createdDate" : 1766692470257,
+      "secretData" : "{\"value\":\"qVxUdGqRwQwZxdKJZ6zdnV7NR/gNE3igfxh4nInAXD4=\",\"salt\":\"bXV/2XT7dV+RT62Hwacpsg==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-medimind", "Doctor" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "c697572f-2c24-4887-bea7-7861193051ba",
+    "username" : "identity@gmail.com",
+    "firstName" : "identity",
+    "lastName" : "test",
+    "email" : "identity@gmail.com",
+    "emailVerified" : false,
+    "createdTimestamp" : 1766174420104,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "d284080b-aa4c-45db-9bfb-4a2f14dd1e36",
+      "type" : "password",
+      "createdDate" : 1766174420124,
+      "secretData" : "{\"value\":\"UfW2nnoa0chPQkbhV7SR+X5T1r0sQBaM+wvL7i08dUI=\",\"salt\":\"pc/TV/9+1bwtZIJZhfGfMg==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-medimind", "User" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "fc085b2f-1084-4ffe-9560-266d2e7e4d18",
+    "username" : "kayseri@gmail.com",
+    "firstName" : "lina",
+    "lastName" : "bulut",
+    "email" : "kayseri@gmail.com",
+    "emailVerified" : false,
+    "attributes" : {
+      "Registiration_number" : [ "1234567890" ]
+    },
+    "createdTimestamp" : 1766693506692,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "16548437-277f-447c-ab5c-d2d51bae33f7",
+      "type" : "password",
+      "createdDate" : 1766693506722,
+      "secretData" : "{\"value\":\"ucOYtj/3+OdIkgol5dxp6hJJM44MXVjE0SrfTMFBa1o=\",\"salt\":\"lO0A+Z3WBqsXAXw6M215yA==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-medimind", "Doctor" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "a79c4bf2-1807-45e5-983d-5bd06435b96e",
+    "username" : "kayseri1@gmail.com",
+    "firstName" : "lina",
+    "lastName" : "bulut",
+    "email" : "kayseri1@gmail.com",
+    "emailVerified" : false,
+    "attributes" : {
+      "Registiration_number" : [ "1234567890" ]
+    },
+    "createdTimestamp" : 1766694192952,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "fa4c2566-ad4e-4500-b483-dac8bda721fe",
+      "type" : "password",
+      "createdDate" : 1766694192977,
+      "secretData" : "{\"value\":\"xMpRjhUGYronrgzCHOQBSJqrljw728IeSLub14k9+rw=\",\"salt\":\"3ONdqzf3ProLTTRb+2ueGA==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-medimind", "Doctor" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "9838c376-cb10-41df-bf77-f1e7ec7f80a0",
+    "username" : "kayseri2@gmail.com",
+    "firstName" : "lina",
+    "lastName" : "bulut",
+    "email" : "kayseri2@gmail.com",
+    "emailVerified" : false,
+    "attributes" : {
+      "Registiration_number" : [ "1234567890" ]
+    },
+    "createdTimestamp" : 1766694527149,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "05ef9426-c9c4-4c10-8fdb-afd03042ee6b",
+      "type" : "password",
+      "createdDate" : 1766694527216,
+      "secretData" : "{\"value\":\"OsOGrUdHFy5rxp6bUvxCDmeVyDMu7gJfhCEc7U3inp8=\",\"salt\":\"czusdtdd5QpDM8W8xVqSbQ==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-medimind", "Doctor" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "0f0d42f8-0e8b-47aa-b934-c9003f4d596b",
+    "username" : "lina@gmail.com",
+    "firstName" : "lina",
+    "lastName" : "bulut",
+    "email" : "lina@gmail.com",
+    "emailVerified" : false,
+    "attributes" : {
+      "Registiration_number" : [ "1234567890" ]
+    },
+    "createdTimestamp" : 1766692235815,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "d4bbb4c0-8af0-4f74-96b8-5b5a500fcd1d",
+      "type" : "password",
+      "createdDate" : 1766692235959,
+      "secretData" : "{\"value\":\"/Pc1s/hmbkPW2YIRA9Ukngvyk1g2PJNQfUwp6z9EYqo=\",\"salt\":\"KbuniZ/JOB8z/msgb1MDXw==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-medimind", "Doctor" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "f8594556-5b4e-478f-938a-9d6c54740f3c",
+    "username" : "service-account-admin-api-client",
+    "emailVerified" : false,
+    "createdTimestamp" : 1765915429010,
+    "enabled" : true,
+    "totp" : false,
+    "serviceAccountClientId" : "admin-api-client",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-medimind" ],
+    "clientRoles" : {
+      "realm-management" : [ "view-users", "query-users", "manage-users", "view-realm" ],
+      "account" : [ "manage-account" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "9e351f6f-150b-4d25-8777-bd418a1aa85a",
+    "username" : "string",
+    "emailVerified" : false,
+    "createdTimestamp" : 1766004655805,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "ec5a29d2-d8b5-4f61-b981-a10220e42436",
+      "type" : "password",
+      "createdDate" : 1766004655887,
+      "secretData" : "{\"value\":\"Rl1ofwG/n4BgUAe8XAECY2OCpMlcW7uEKeKeDpXPn4U=\",\"salt\":\"J+s/OhP5miduRkWoGdlkMw==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-medimind" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "6d125dc1-33c4-4691-9563-b6353cb61b62",
+    "username" : "string11@gmail.com",
+    "email" : "string11@gmail.com",
+    "emailVerified" : false,
+    "createdTimestamp" : 1766008354036,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "46ac3899-1402-47c7-9961-f0a4d36e989b",
+      "type" : "password",
+      "createdDate" : 1766008354114,
+      "secretData" : "{\"value\":\"xRjClR0H1x//uZ4ok/qDpkgQ+n+L7FUHlVlkB/JROSI=\",\"salt\":\"W/PV3ynGHyzct9kdFCIt/w==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-medimind" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "eb07ba2b-76bf-439e-888f-6b5e0e062895",
+    "username" : "string111@gmail.com",
+    "email" : "string111@gmail.com",
+    "emailVerified" : false,
+    "createdTimestamp" : 1766008569309,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "fc75cb49-54ce-4fc5-9651-89e72cd4f3fd",
+      "type" : "password",
+      "createdDate" : 1766008569330,
+      "secretData" : "{\"value\":\"Ysg+Bt2/yuCxCgQju80RTPvcoFl4xcDLdjCO1v/x8Ts=\",\"salt\":\"6q02dvxh9lhXwYoTIwzGhw==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-medimind", "User" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  } ]
+}
