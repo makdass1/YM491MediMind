@@ -98,6 +98,37 @@
         }
       }
     },
+    "/api/reminders": {
+      "post": {
+        "tags": [
+          "Reminder"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateReminderRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateReminderRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateReminderRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Test/public": {
       "get": {
         "tags": [
@@ -125,6 +156,36 @@
   },
   "components": {
     "schemas": {
+      "CreateReminderRequest": {
+        "type": "object",
+        "properties": {
+          "dosage": {
+            "type": "string",
+            "nullable": true
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "finishDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "medicineId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "frequencyOfUseId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "note": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "DoctorLoginRequest": {
         "type": "object",
         "properties": {

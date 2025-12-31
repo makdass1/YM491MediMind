@@ -48,6 +48,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "App.API.Controllers.ReminderController",
+    "Method": "CreateReminder",
+    "RelativePath": "api/reminders",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "App.Service.Dtos.CreateReminderRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "App.API.Controllers.TestController",
     "Method": "PrivateEndpoint",
     "RelativePath": "api/Test/private",
