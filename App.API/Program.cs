@@ -21,6 +21,7 @@ builder.Services.AddScoped<ParalelDbService>();
 builder.Services.AddHttpClient<KeycloakAdminService>();
 builder.Services.AddHttpClient<KeycloakAuthService>();
 builder.Services.AddScoped<ReminderService>();
+builder.Services.AddScoped<MedicalDataService>();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {

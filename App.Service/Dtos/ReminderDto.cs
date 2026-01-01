@@ -22,4 +22,16 @@ namespace App.Service.Dtos
         public int FrequencyOfUseId { get; set; }
         public string? Note { get; set; }
     }
+    public class ReminderDto
+    {
+        public int Id { get; set; }
+        public DateTime CreatedTime { get; set; }
+        public bool IsTaked { get; set; }
+        public string Dosage { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime FinishDate { get; set; }
+        public int MedicineId { get; set; }
+        public int FrequencyOfUseId { get; set; }
+        public string Note { get; set; }
+    }
 }

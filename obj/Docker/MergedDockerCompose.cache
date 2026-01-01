@@ -1,0 +1,31 @@
+name: dockercompose10224974978582138795
+services:
+  keycloak:
+    command:
+      - start-dev
+      - --import-realm
+    container_name: keycloak
+    environment:
+      KC_DB: mssql
+      KC_DB_PASSWORD: keycloak123!
+      KC_DB_URL: jdbc:sqlserver://host.docker.internal:1433;databaseName=YM491;encrypt=false;trustServerCertificate=true
+      KC_DB_USERNAME: keycloak
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+    image: quay.io/keycloak/keycloak:26.0
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8080"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\Mustafa\Desktop\GITHUB\YM491MediMind\keycloak\import
+        target: /opt/keycloak/data/import
+        bind:
+          create_host_path: true
+networks:
+  default:
+    name: dockercompose10224974978582138795_default

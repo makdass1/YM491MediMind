@@ -47,5 +47,32 @@ namespace App.API.Controllers
                 UserId = userId
             });
         }
+
+
+
+        // ... (CreateReminder metodu yukarıda) ...
+
+        [HttpGet]
+        public async Task<IActionResult> GetMyReminders()
+        {
+            // 1. Token'dan Keycloak ID'yi al
+            var keycloakUserId = User.GetKeycloakUserId();
+
+            try
+            {
+                // 2. DB'deki gerçek User ID'yi bul
+                int userId = await _reminderService.GetUserIdFromKeycloakIdAsync(keycloakUserId);
+
+                // 3. Kullanıcıya ait hatırlatıcıları getir
+                var reminders = await _reminderService.GetRemindersByUserIdAsync(userId);
+
+                return Ok(reminders);
+            }
+            catch (Exception ex)
+            {
+                // Kullanıcı bulunamazsa veya SQL hatası olursa 400 dön
+                return BadRequest(new { message = ex.Message });
+            }
+        }
     }
 }

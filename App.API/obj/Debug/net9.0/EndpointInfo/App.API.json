@@ -98,6 +98,54 @@
         }
       }
     },
+    "/api/medical-data/medicines": {
+      "get": {
+        "tags": [
+          "MedicalData"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/medical-data/frequencies": {
+      "get": {
+        "tags": [
+          "MedicalData"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/medical-data/allergies": {
+      "get": {
+        "tags": [
+          "MedicalData"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/medical-data/user-allergies": {
+      "get": {
+        "tags": [
+          "MedicalData"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/reminders": {
       "post": {
         "tags": [
@@ -122,6 +170,16 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Reminder"
+        ],
         "responses": {
           "200": {
             "description": "OK"

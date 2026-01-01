@@ -48,6 +48,46 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "App.API.Controllers.MedicalDataController",
+    "Method": "GetAllergies",
+    "RelativePath": "api/medical-data/allergies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "App.API.Controllers.MedicalDataController",
+    "Method": "GetFrequencies",
+    "RelativePath": "api/medical-data/frequencies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "App.API.Controllers.MedicalDataController",
+    "Method": "GetMedicines",
+    "RelativePath": "api/medical-data/medicines",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "App.API.Controllers.MedicalDataController",
+    "Method": "GetUserAllergies",
+    "RelativePath": "api/medical-data/user-allergies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "App.API.Controllers.ReminderController",
     "Method": "CreateReminder",
     "RelativePath": "api/reminders",
@@ -61,6 +101,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "App.API.Controllers.ReminderController",
+    "Method": "GetMyReminders",
+    "RelativePath": "api/reminders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

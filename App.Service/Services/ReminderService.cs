@@ -73,5 +73,55 @@ namespace App.Service.Services
             var reminderId = (int)await cmd.ExecuteScalarAsync();
             return reminderId;
         }
+
+        // ... (Mevcut kodların yukarıda) ...
+
+        /// <summary>
+        /// Kullanıcı ID'sine göre Reminder listesini döner.
+        /// </summary>
+        public async Task<List<ReminderDto>> GetRemindersByUserIdAsync(int userId)
+        {
+            var list = new List<ReminderDto>();
+            using var conn = GetConnection();
+            await conn.OpenAsync();
+
+            // Sadece o user'a ait verileri çekiyoruz (WHERE UserId = @UserId)
+            var cmd = new SqlCommand(@"
+                SELECT 
+                    Id, 
+                    CreatedTime, 
+                    IsTaked, 
+                    Dosage, 
+                    Start_date, 
+                    Finish_date, 
+                    MedicineId, 
+                    Frequency_of_useId, 
+                    Note
+                FROM Reminders
+                WHERE UserId = @UserId
+                ORDER BY CreatedTime DESC", conn); // En yeni eklenen en üstte gelsin
+
+            cmd.Parameters.AddWithValue("@UserId", userId);
+
+            using var reader = await cmd.ExecuteReaderAsync();
+            while (await reader.ReadAsync())
+            {
+                list.Add(new ReminderDto
+                {
+                    Id = reader.GetInt32(0),
+                    CreatedTime = reader.GetDateTime(1),
+                    IsTaked = reader.GetBoolean(2),
+                    Dosage = reader.GetString(3),
+                    StartDate = reader.GetDateTime(4),
+                    FinishDate = reader.GetDateTime(5),
+                    MedicineId = reader.GetInt32(6),
+                    FrequencyOfUseId = reader.GetInt32(7),
+                    // Note kolonu NULL gelebilir, kontrol ediyoruz:
+                    Note = reader.IsDBNull(8) ? null : reader.GetString(8)
+                });
+            }
+
+            return list;
+        }
     }
 }
