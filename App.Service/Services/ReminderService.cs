@@ -47,20 +47,39 @@ namespace App.Service.Services
         /// <summary>
         /// Yeni bir reminder oluşturur ve Id döner
         /// </summary>
+        // App.Service.Services -> ReminderService.cs içi
+
+        // App.Service.Services -> ReminderService.cs
+
         public async Task<int> CreateReminderAsync(CreateReminderRequest request, int userId)
         {
             using var conn = GetConnection();
             await conn.OpenAsync();
 
-            var cmd = new SqlCommand(@"
-                INSERT INTO Reminders 
-                (CreatedTime, IsTaked, Dosage, Start_date, Finish_date, MedicineId, Frequency_of_useId, UserId, Note)
-                VALUES 
-                (@CreatedTime, @IsTaked, @Dosage, @StartDate, @FinishDate, @MedicineId, @FrequencyId, @UserId, @Note);
-                SELECT CAST(SCOPE_IDENTITY() AS INT);
-            ", conn);
+            DateTime now = DateTime.Now;
+            DateTime firstNotificationTime;
 
-            cmd.Parameters.AddWithValue("@CreatedTime", DateTime.UtcNow);
+            // KURAL: İlk bildirim StartDate'den 1 dakika sonra olsun.
+            // Ancak eğer kullanıcı StartDate'i geçmiş bir tarih seçtiyse (örn: sabah seçti, akşam ekliyor),
+            // bildirimi kaçırmasın diye "Şu an + 1 dk" yapıyoruz.
+            if (request.StartDate > now)
+            {
+                firstNotificationTime = request.StartDate.AddMinutes(1);
+            }
+            else
+            {
+                firstNotificationTime = now.AddMinutes(1);
+            }
+
+            var cmd = new SqlCommand(@"
+        INSERT INTO Reminders 
+        (CreatedTime, IsTaked, Dosage, Start_date, Finish_date, MedicineId, Frequency_of_useId, UserId, Note, NextExecutionTime)
+        VALUES 
+        (@CreatedTime, @IsTaked, @Dosage, @StartDate, @FinishDate, @MedicineId, @FrequencyId, @UserId, @Note, @NextExecTime);
+        SELECT CAST(SCOPE_IDENTITY() AS INT);
+    ", conn);
+
+            cmd.Parameters.AddWithValue("@CreatedTime", now);
             cmd.Parameters.AddWithValue("@IsTaked", false);
             cmd.Parameters.AddWithValue("@Dosage", request.Dosage);
             cmd.Parameters.AddWithValue("@StartDate", request.StartDate);
@@ -70,15 +89,14 @@ namespace App.Service.Services
             cmd.Parameters.AddWithValue("@UserId", userId);
             cmd.Parameters.AddWithValue("@Note", request.Note ?? (object)DBNull.Value);
 
+            // 🔥 İlk tetikleyici zamanı burası
+            cmd.Parameters.AddWithValue("@NextExecTime", firstNotificationTime);
+
             var reminderId = (int)await cmd.ExecuteScalarAsync();
             return reminderId;
         }
 
-        // ... (Mevcut kodların yukarıda) ...
 
-        /// <summary>
-        /// Kullanıcı ID'sine göre Reminder listesini döner.
-        /// </summary>
         public async Task<List<ReminderDto>> GetRemindersByUserIdAsync(int userId)
         {
             var list = new List<ReminderDto>();

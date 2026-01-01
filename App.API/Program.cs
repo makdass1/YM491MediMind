@@ -22,6 +22,7 @@ builder.Services.AddHttpClient<KeycloakAdminService>();
 builder.Services.AddHttpClient<KeycloakAuthService>();
 builder.Services.AddScoped<ReminderService>();
 builder.Services.AddScoped<MedicalDataService>();
+builder.Services.AddHostedService<ReminderNotificationWorker>();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
