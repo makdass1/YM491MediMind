@@ -3,24 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F8A04E18-8BDF-4EAC-A2EA-2DC5B53CF83E}|App.Service\\App.Service.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.service\\services\\keycloakadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8A04E18-8BDF-4EAC-A2EA-2DC5B53CF83E}|App.Service\\App.Service.csproj|solutionrelative:app.service\\services\\keycloakadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8A04E18-8BDF-4EAC-A2EA-2DC5B53CF83E}|App.Service\\App.Service.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.service\\services\\remindernotificationworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8A04E18-8BDF-4EAC-A2EA-2DC5B53CF83E}|App.Service\\App.Service.csproj|solutionrelative:app.service\\services\\remindernotificationworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6DA7110-3651-4CE9-969B-D0FF2064B03A}|App.API\\App.API.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D6DA7110-3651-4CE9-969B-D0FF2064B03A}|App.API\\App.API.csproj|solutionrelative:app.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{F8A04E18-8BDF-4EAC-A2EA-2DC5B53CF83E}|App.Service\\App.Service.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.service\\services\\reminderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8A04E18-8BDF-4EAC-A2EA-2DC5B53CF83E}|App.Service\\App.Service.csproj|solutionrelative:app.service\\services\\reminderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8A04E18-8BDF-4EAC-A2EA-2DC5B53CF83E}|App.Service\\App.Service.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.service\\services\\claimsprincipalextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8A04E18-8BDF-4EAC-A2EA-2DC5B53CF83E}|App.Service\\App.Service.csproj|solutionrelative:app.service\\services\\claimsprincipalextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8A04E18-8BDF-4EAC-A2EA-2DC5B53CF83E}|App.Service\\App.Service.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.service\\dtos\\reminderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8A04E18-8BDF-4EAC-A2EA-2DC5B53CF83E}|App.Service\\App.Service.csproj|solutionrelative:app.service\\dtos\\reminderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6DA7110-3651-4CE9-969B-D0FF2064B03A}|App.API\\App.API.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6DA7110-3651-4CE9-969B-D0FF2064B03A}|App.API\\App.API.csproj|solutionrelative:app.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8A04E18-8BDF-4EAC-A2EA-2DC5B53CF83E}|App.Service\\App.Service.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.service\\services\\keycloakauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8A04E18-8BDF-4EAC-A2EA-2DC5B53CF83E}|App.Service\\App.Service.csproj|solutionrelative:app.service\\services\\keycloakauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D6DA7110-3651-4CE9-969B-D0FF2064B03A}|App.API\\App.API.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.api\\remindercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6DA7110-3651-4CE9-969B-D0FF2064B03A}|App.API\\App.API.csproj|solutionrelative:app.api\\remindercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6DA7110-3651-4CE9-969B-D0FF2064B03A}|App.API\\App.API.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.api\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6DA7110-3651-4CE9-969B-D0FF2064B03A}|App.API\\App.API.csproj|solutionrelative:app.api\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D6DA7110-3651-4CE9-969B-D0FF2064B03A}|App.API\\App.API.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.api\\medicaldatacontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6DA7110-3651-4CE9-969B-D0FF2064B03A}|App.API\\App.API.csproj|solutionrelative:app.api\\medicaldatacontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8A04E18-8BDF-4EAC-A2EA-2DC5B53CF83E}|App.Service\\App.Service.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.service\\services\\medicaldataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8A04E18-8BDF-4EAC-A2EA-2DC5B53CF83E}|App.Service\\App.Service.csproj|solutionrelative:app.service\\services\\medicaldataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8A04E18-8BDF-4EAC-A2EA-2DC5B53CF83E}|App.Service\\App.Service.csproj|c:\\users\\mustafa\\desktop\\github\\ym491medimind\\app.service\\dtos\\helperclassesdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8A04E18-8BDF-4EAC-A2EA-2DC5B53CF83E}|App.Service\\App.Service.csproj|solutionrelative:app.service\\dtos\\helperclassesdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 216,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,64 +54,116 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\appsettings.json",
-              "RelativeDocumentMoniker": "App.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\appsettings.json",
-              "RelativeToolTip": "App.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-25T20:02:43.824Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\Program.cs",
-              "RelativeDocumentMoniker": "App.API\\Program.cs",
-              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\Program.cs",
-              "RelativeToolTip": "App.API\\Program.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAACAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-25T19:42:51.895Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "KeycloakAdminService.cs",
-              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\Services\\KeycloakAdminService.cs",
-              "RelativeDocumentMoniker": "App.Service\\Services\\KeycloakAdminService.cs",
-              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\Services\\KeycloakAdminService.cs",
-              "RelativeToolTip": "App.Service\\Services\\KeycloakAdminService.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAcwJMAAAAMAAAAAAAAAA==",
+              "Title": "ReminderNotificationWorker.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\Services\\ReminderNotificationWorker.cs",
+              "RelativeDocumentMoniker": "App.Service\\Services\\ReminderNotificationWorker.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\Services\\ReminderNotificationWorker.cs",
+              "RelativeToolTip": "App.Service\\Services\\ReminderNotificationWorker.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAuwJkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T19:55:26.451Z",
+              "WhenOpened": "2026-01-01T14:33:04.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReminderDto.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\Dtos\\ReminderDto.cs",
+              "RelativeDocumentMoniker": "App.Service\\Dtos\\ReminderDto.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\Dtos\\ReminderDto.cs",
+              "RelativeToolTip": "App.Service\\Dtos\\ReminderDto.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwBgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T12:25:59.397Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\AuthController.cs",
-              "RelativeDocumentMoniker": "App.API\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\AuthController.cs",
-              "RelativeToolTip": "App.API\\AuthController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAYwCgAAAABAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\Program.cs",
+              "RelativeDocumentMoniker": "App.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\Program.cs",
+              "RelativeToolTip": "App.API\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T19:35:58.403Z"
+              "WhenOpened": "2026-01-01T12:18:54.759Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "KeycloakAuthService.cs",
-              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\Services\\KeycloakAuthService.cs",
-              "RelativeDocumentMoniker": "App.Service\\Services\\KeycloakAuthService.cs",
-              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\Services\\KeycloakAuthService.cs",
-              "RelativeToolTip": "App.Service\\Services\\KeycloakAuthService.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAkwDEAAAAKAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "MedicalDataController .cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\MedicalDataController .cs",
+              "RelativeDocumentMoniker": "App.API\\MedicalDataController .cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\MedicalDataController .cs",
+              "RelativeToolTip": "App.API\\MedicalDataController .cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAIwFEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T19:19:43.304Z"
+              "WhenOpened": "2026-01-01T12:18:29.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MedicalDataService.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\Services\\MedicalDataService.cs",
+              "RelativeDocumentMoniker": "App.Service\\Services\\MedicalDataService.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\Services\\MedicalDataService.cs",
+              "RelativeToolTip": "App.Service\\Services\\MedicalDataService.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAwG4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T12:17:52.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HelperClassesDtos.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\Dtos\\HelperClassesDtos.cs",
+              "RelativeDocumentMoniker": "App.Service\\Dtos\\HelperClassesDtos.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\Dtos\\HelperClassesDtos.cs",
+              "RelativeToolTip": "App.Service\\Dtos\\HelperClassesDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T12:17:11.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClaimsPrincipalExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\Services\\ClaimsPrincipalExtensions.cs",
+              "RelativeDocumentMoniker": "App.Service\\Services\\ClaimsPrincipalExtensions.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\Services\\ClaimsPrincipalExtensions.cs",
+              "RelativeToolTip": "App.Service\\Services\\ClaimsPrincipalExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T21:58:43.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReminderController.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\ReminderController.cs",
+              "RelativeDocumentMoniker": "App.API\\ReminderController.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.API\\ReminderController.cs",
+              "RelativeToolTip": "App.API\\ReminderController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAwEsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T21:58:31.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReminderService.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\Services\\ReminderService.cs",
+              "RelativeDocumentMoniker": "App.Service\\Services\\ReminderService.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\Desktop\\GITHUB\\YM491MediMind\\App.Service\\Services\\ReminderService.cs",
+              "RelativeToolTip": "App.Service\\Services\\ReminderService.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAmwEEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T21:58:17.531Z",
+              "EditorCaption": ""
             }
           ]
         }

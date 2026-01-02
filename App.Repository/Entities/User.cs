@@ -8,6 +8,7 @@ namespace App.Repository.Entities
 {
     public class User: BaseEntity<int>
     {
+        public Guid KeycloakUserId { get; set; }
         public string Name { get; set; } = default!;
         public string LastName{ get; set; }=default!;
         public string Mail { get; set; } = default!;

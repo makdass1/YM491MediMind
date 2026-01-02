@@ -1,46 +1,29 @@
 name: dockercompose10224974978582138795
 services:
-  app.api:
-    build:
-      context: C:\Users\Mustafa\Desktop\GITHUB\YM491MediMind
-      dockerfile: App.API/Dockerfile
+  keycloak:
+    command:
+      - start-dev
+      - --import-realm
+    container_name: keycloak
     environment:
-      ASPNETCORE_ENVIRONMENT: Development
-      ASPNETCORE_HTTP_PORTS: "8080"
-      ASPNETCORE_HTTPS_PORTS: "8081"
-    image: appapi
+      KC_DB: mssql
+      KC_DB_PASSWORD: keycloak123!
+      KC_DB_URL: jdbc:sqlserver://host.docker.internal:1433;databaseName=YM491;encrypt=false;trustServerCertificate=true
+      KC_DB_USERNAME: keycloak
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+    image: quay.io/keycloak/keycloak:26.0
     networks:
       default: null
     ports:
       - mode: ingress
         target: 8080
-        protocol: tcp
-      - mode: ingress
-        target: 8081
+        published: "8080"
         protocol: tcp
     volumes:
       - type: bind
-        source: C:\Users\Mustafa\AppData\Roaming/Microsoft/UserSecrets
-        target: /home/app/.microsoft/usersecrets
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\Mustafa\AppData\Roaming/Microsoft/UserSecrets
-        target: /root/.microsoft/usersecrets
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\Mustafa\AppData\Roaming/ASP.NET/Https
-        target: /home/app/.aspnet/https
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\Mustafa\AppData\Roaming/ASP.NET/Https
-        target: /root/.aspnet/https
-        read_only: true
+        source: C:\Users\Mustafa\Desktop\GITHUB\YM491MediMind\keycloak\import
+        target: /opt/keycloak/data/import
         bind:
           create_host_path: true
 networks:

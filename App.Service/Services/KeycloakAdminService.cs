@@ -9,11 +9,12 @@ namespace App.Service.Services
     {
         private readonly HttpClient _http;
         private readonly IConfiguration _config;
-
-        public KeycloakAdminService(HttpClient http, IConfiguration config)
+        private readonly ParalelDbService _paralelDbService;
+        public KeycloakAdminService(HttpClient http, IConfiguration config , ParalelDbService paralelDbService)
         {
             _http = http;
             _config = config;
+             _paralelDbService=paralelDbService;
         }
 
         private async Task<string> GetAdminTokenAsync()
@@ -117,6 +118,18 @@ namespace App.Service.Services
 
             if (!assignResponse.IsSuccessStatusCode)
                 throw new Exception("Role atama başarısız");
+
+
+            var keycloakGuid = Guid.Parse(userId!);
+
+            if (request.Role == "user")
+            {
+                await _paralelDbService.SaveUserAsync(keycloakGuid, request);
+            }
+            else if (request.Role == "doctor")
+            {
+                await _paralelDbService.SaveDoctorAsync(keycloakGuid, request);
+            }
         }
     }
 }

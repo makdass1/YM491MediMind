@@ -17,11 +17,16 @@ var validIssuer = authSettings["ValidIssuer"];
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddHttpClient();
+builder.Services.AddScoped<ParalelDbService>();
 builder.Services.AddHttpClient<KeycloakAdminService>();
 builder.Services.AddHttpClient<KeycloakAuthService>();
+builder.Services.AddScoped<ReminderService>();
+builder.Services.AddScoped<MedicalDataService>();
+builder.Services.AddHostedService<ReminderNotificationWorker>();
+
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 builder.Services.AddControllers();
 
@@ -46,27 +51,23 @@ builder.Services.AddSwaggerGen(c =>
     }});
 });
 
-// 🔥 2) ***TEK BİR JWT AUTHENTICATION*** (Problem buradaydı)
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
-        // Docker içinden Keycloak metadata’sı
-        options.MetadataAddress = metadataAddress;
+        options.Authority = "http://localhost:8080/realms/MediMind";
         options.RequireHttpsMetadata = false;
 
-        // Token Doğrulama
         options.TokenValidationParameters = new TokenValidationParameters
         {
-            ValidateIssuerSigningKey = true,
             ValidateIssuer = true,
+            ValidateAudience = false, // Keycloak için OK
             ValidateLifetime = true,
-            ValidateAudience = false, // Keycloak ANCAK böyle çalışır
+            ValidateIssuerSigningKey = true,
 
-            // Token localhost der → API keycloak ağı der
-            ValidIssuer = validIssuer,
             ClockSkew = TimeSpan.Zero
         };
     });
+
 
 
 builder.Services.AddRepository(builder.Configuration);

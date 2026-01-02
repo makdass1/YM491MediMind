@@ -1,6 +1,7 @@
 ﻿using App.Service.Dtos;
 using App.Service.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 namespace App.API
 {
     [ApiController]
@@ -14,17 +15,29 @@ namespace App.API
             _authService = authService;
         }
 
-        // 1️⃣ USER LOGIN (email + password)
         [HttpPost("login/user")]
-        public async Task<IActionResult> UserLogin([FromBody] UserLoginRequest request)
+        public async Task<IActionResult> UserLogin(
+     [FromBody] UserLoginRequest request,
+     [FromServices] ParalelDbService dbService)
         {
-            var token = await _authService.LoginAsync(
+            var tokenJson = await _authService.LoginAsync(
                 request.Email,
                 request.Password
             );
 
-            return Ok(token);
+            var token = JsonSerializer.Deserialize<TokenResponse>(tokenJson)!;
+
+            var keycloakUserId = JwtHelper.GetUserIdFromToken(token.access_token);
+
+            var userId = await dbService.GetUserIdByKeycloakIdAsync(keycloakUserId);
+
+            return Ok(new
+            {
+                accessToken = token.access_token,
+                userId = userId
+            });
         }
+
 
         // 2️⃣ DOCTOR LOGIN (registrationNumber + password)
         [HttpPost("login/doctor")]

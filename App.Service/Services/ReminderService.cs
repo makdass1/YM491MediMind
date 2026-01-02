@@ -1,98 +1,145 @@
-﻿//using App.Repository;
-//using App.Repository.Entities;
-//using App.Repository.Repositories;
-//using App.Service.Dtos;
-//using App.Service.Services;
+﻿using App.Service.Dtos;
+using App.Repository.Entities;
+using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
+using System;
+using System.Threading.Tasks;
 
-//using AutoMapper;
-//using Azure.Core;
-//using Microsoft.EntityFrameworkCore;
+namespace App.Service.Services
+{
+    public class ReminderService
+    {
+        private readonly IConfiguration _config;
 
-//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
-//using static System.Runtime.InteropServices.JavaScript.JSType;
+        public ReminderService(IConfiguration config)
+        {
+            _config = config;
+        }
 
-//namespace App.Service.Transaction
-//{
-//    public class TransactionService(IRemindersRepository remindersrepository, IMapper mapper) : IReminderService
-//    {
-//        public async Task<ServiceResult<ReminderListOutputModel>> CreateTransactionAsync(ReminderCreateInputModel dto)
-//        {
-//            var newReminder = mapper.Map<Reminder>(ReminderCreateInputModel);
-//            newCourse.Created = DateTime.Now;
-//            newCourse.UserId = identityService.UserId;
+        private SqlConnection GetConnection()
+        {
+            return new SqlConnection(
+                _config.GetConnectionString("DefaultConnection")
+                ?? _config.GetConnectionString("SqlServer")
+            );
+        }
 
-//            // önce DB'ye ekleniyor
-//            await transactionRepository.AddAsync(transaction);
-//            await IUNiteOf.SaveChangesAsync();
+        /// <summary>
+        /// Keycloak GUID -> DB'deki int UserId
+        /// </summary>
+        public async Task<int> GetUserIdFromKeycloakIdAsync(Guid keycloakUserId)
+        {
+            using var conn = GetConnection();
+            await conn.OpenAsync();
 
-//            // 🔹 DTO oluşturuluyor
-//            var responseDto = new CreateTransactionResponse(
-//                transaction.Id,
-//                transaction.Amount,
-//                transaction.Date,
-//                mapper.Map<TransactionTypeDto>(transaction.TransactionType),
-//                mapper.Map<CurrencyDto>(transaction.Currency)
+            var cmd = new SqlCommand(@"
+                SELECT Id FROM Users WHERE KeycloakUserId = @KeycloakId
+            ", conn);
+            cmd.Parameters.AddWithValue("@KeycloakId", keycloakUserId);
 
-//            );
+            var result = await cmd.ExecuteScalarAsync();
+            if (result == null)
+                throw new Exception("Keycloak kullanıcısına karşılık gelen User bulunamadı");
 
-//            // 🔹 Redis'e ekleme 
-//            var db = redis.GetDatabase();  //normalde her seferinde almayız, constructor'da alırız
-//            var cacheKey = $"transaction:{transaction.Id}";
-//            var serialized = System.Text.Json.JsonSerializer.Serialize(responseDto);
-//            await db.StringSetAsync(cacheKey, serialized, TimeSpan.FromHours(1)); // 1 saat cache süresi
+            return Convert.ToInt32(result);
+        }
 
-//            return ServiceResult<CreateTransactionResponse>.Success(responseDto);
-//            //var transaction = new Repository.Transactions.Transaction()
-//            //{
-//            //    Amount= dto.Amount,
-//            //    Title=dto.Title,
-//            //    CurrencyId=dto.CurrencyId,
-//            //    TransactionTypeId=dto.TransactionTypeId,
-//            //    Date=dto.Date
+        /// <summary>
+        /// Yeni bir reminder oluşturur ve Id döner
+        /// </summary>
+        // App.Service.Services -> ReminderService.cs içi
 
-//            //};
-//            //await transactionRepository.AddAsync(transaction);
-//            //await ıUNiteOf.SaveChangesAsync();
-//            //return ServiceResult<CreateTransactionResponse>.Success(new CreateTransactionResponse(transaction.Id,transaction.Amount,transaction.Date, mapper.Map<TransactionTypeDto>(transaction.TransactionType),
-//            //mapper.Map<CurrencyDto>(transaction.Currency)));
+        // App.Service.Services -> ReminderService.cs
+
+        public async Task<int> CreateReminderAsync(CreateReminderRequest request, int userId)
+        {
+            using var conn = GetConnection();
+            await conn.OpenAsync();
+
+            DateTime now = DateTime.Now;
+            DateTime firstNotificationTime;
+
+            // KURAL: İlk bildirim StartDate'den 1 dakika sonra olsun.
+            // Ancak eğer kullanıcı StartDate'i geçmiş bir tarih seçtiyse (örn: sabah seçti, akşam ekliyor),
+            // bildirimi kaçırmasın diye "Şu an + 1 dk" yapıyoruz.
+            if (request.StartDate > now)
+            {
+                firstNotificationTime = request.StartDate.AddMinutes(1);
+            }
+            else
+            {
+                firstNotificationTime = now.AddMinutes(1);
+            }
+
+            var cmd = new SqlCommand(@"
+        INSERT INTO Reminders 
+        (CreatedTime, IsTaked, Dosage, Start_date, Finish_date, MedicineId, Frequency_of_useId, UserId, Note, NextExecutionTime)
+        VALUES 
+        (@CreatedTime, @IsTaked, @Dosage, @StartDate, @FinishDate, @MedicineId, @FrequencyId, @UserId, @Note, @NextExecTime);
+        SELECT CAST(SCOPE_IDENTITY() AS INT);
+    ", conn);
+
+            cmd.Parameters.AddWithValue("@CreatedTime", now);
+            cmd.Parameters.AddWithValue("@IsTaked", false);
+            cmd.Parameters.AddWithValue("@Dosage", request.Dosage);
+            cmd.Parameters.AddWithValue("@StartDate", request.StartDate);
+            cmd.Parameters.AddWithValue("@FinishDate", request.FinishDate);
+            cmd.Parameters.AddWithValue("@MedicineId", request.MedicineId);
+            cmd.Parameters.AddWithValue("@FrequencyId", request.FrequencyOfUseId);
+            cmd.Parameters.AddWithValue("@UserId", userId);
+            cmd.Parameters.AddWithValue("@Note", request.Note ?? (object)DBNull.Value);
+
+            // 🔥 İlk tetikleyici zamanı burası
+            cmd.Parameters.AddWithValue("@NextExecTime", firstNotificationTime);
+
+            var reminderId = (int)await cmd.ExecuteScalarAsync();
+            return reminderId;
+        }
 
 
-//        }
+        public async Task<List<ReminderDto>> GetRemindersByUserIdAsync(int userId)
+        {
+            var list = new List<ReminderDto>();
+            using var conn = GetConnection();
+            await conn.OpenAsync();
 
-//        public Task<ServiceResult> DeleteTransactionAsync(int id)
-//        {
-//            throw new NotImplementedException();
-//        }
+            // Sadece o user'a ait verileri çekiyoruz (WHERE UserId = @UserId)
+            var cmd = new SqlCommand(@"
+                SELECT 
+                    Id, 
+                    CreatedTime, 
+                    IsTaked, 
+                    Dosage, 
+                    Start_date, 
+                    Finish_date, 
+                    MedicineId, 
+                    Frequency_of_useId, 
+                    Note
+                FROM Reminders
+                WHERE UserId = @UserId
+                ORDER BY CreatedTime DESC", conn); // En yeni eklenen en üstte gelsin
 
-//        public async Task<ServiceResult<List<TransactionDto>>> GetAllTransactionsAsync()
-//        {
-//            var transactions = await transactionRepository.GetAll().Include(tt => tt.TransactionType).Include(tt => tt.Currency).ToListAsync();
-//            var dtoList = transactions.Select(tt => new TransactionDto(tt.Id, tt.Amount, tt.Date, tt.TransactionType.Name, tt.Currency.Name)).ToList();
+            cmd.Parameters.AddWithValue("@UserId", userId);
 
-//            return ServiceResult<List<TransactionDto>>.Success(dtoList);
-//            //var transactionsDto = mapper.Map<List<TransactionDto>>(transactions);
-//            //return ServiceResult<List<TransactionDto>>.Success(transactionsDto);
+            using var reader = await cmd.ExecuteReaderAsync();
+            while (await reader.ReadAsync())
+            {
+                list.Add(new ReminderDto
+                {
+                    Id = reader.GetInt32(0),
+                    CreatedTime = reader.GetDateTime(1),
+                    IsTaked = reader.GetBoolean(2),
+                    Dosage = reader.GetString(3),
+                    StartDate = reader.GetDateTime(4),
+                    FinishDate = reader.GetDateTime(5),
+                    MedicineId = reader.GetInt32(6),
+                    FrequencyOfUseId = reader.GetInt32(7),
+                    // Note kolonu NULL gelebilir, kontrol ediyoruz:
+                    Note = reader.IsDBNull(8) ? null : reader.GetString(8)
+                });
+            }
 
-
-//        }
-
-//        public Task<ServiceResult<TransactionDto>> GetTransactionByIdAsync(int id)
-//        {
-//            throw new NotImplementedException();
-//        }
-
-//        public Task<ServiceResult> UpdateTransactionAsync(int id, CreateTransactionRequest dto)
-//        {
-//            throw new NotImplementedException();
-//        }
-
-//        public Task<ServiceResult> UpdateTransactionAsync(int id, int newAmount)
-//        {
-//            throw new NotImplementedException();
-//        }
-//    }
-//}
+            return list;
+        }
+    }
+}
