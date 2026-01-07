@@ -114,6 +114,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "App.API.Controllers.ReminderController",
+    "Method": "GetRemindersBySpecificUserId",
+    "RelativePath": "api/reminders/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "App.API.Controllers.ReminderSelectByUserId",
+    "Method": "GetRemindersBySpecificUserId",
+    "RelativePath": "api/reminderselectbyId/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "App.API.Controllers.TestController",
     "Method": "PrivateEndpoint",
     "RelativePath": "api/Test/private",
