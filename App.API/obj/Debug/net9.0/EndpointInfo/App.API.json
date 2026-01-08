@@ -187,10 +187,41 @@
         }
       }
     },
-    "/api/reminders/{userId}": {
+    "/api/reminder-executions/respond": {
+      "post": {
+        "tags": [
+          "ReminderExecutions"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReminderExecutionResponseRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReminderExecutionResponseRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReminderExecutionResponseRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/reminder-executions/report/{userId}": {
       "get": {
         "tags": [
-          "Reminder"
+          "ReminderExecutions"
         ],
         "parameters": [
           {
@@ -330,6 +361,19 @@
           "registrationNumber": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ReminderExecutionResponseRequest": {
+        "type": "object",
+        "properties": {
+          "executionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isTaken": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false

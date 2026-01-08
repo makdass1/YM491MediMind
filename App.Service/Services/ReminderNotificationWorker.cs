@@ -20,7 +20,7 @@ namespace App.Service.Services
 
         private SqlConnection GetConnection()
         {
-            return new SqlConnection(
+            return new SqlConnection(   
                 _config.GetConnectionString("DefaultConnection")
                 ?? _config.GetConnectionString("SqlServer")
             );
@@ -28,6 +28,7 @@ namespace App.Service.Services
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
+            Console.WriteLine("🔥 ReminderNotificationWorker STARTED 🔥");
             while (!stoppingToken.IsCancellationRequested)
             {
                 try
@@ -87,8 +88,15 @@ namespace App.Service.Services
             foreach (var task in tasks)
             {
                 // 1. Bildirimi Gönder
-                Console.WriteLine($"[BİLDİRİM] User: {task.UserId} - Vakit: {task.ScheduledTime}");
+                int executionId = await CreateExecutionLogAsync(
+        task.ReminderId,
+        task.ScheduledTime
+    );
 
+                // 2. Bildirimi Gönder (şimdilik console)
+                Console.WriteLine(
+                    $"[BİLDİRİM] User: {task.UserId} - ExecutionId: {executionId} - Vakit: {task.ScheduledTime}"
+                );
                 // 2. Bir Sonraki Saati Hesapla
                 // ÖNEMLİ: task.ScheduledTime'ı gönderiyoruz, DateTime.Now'ı DEĞİL.
                 DateTime? nextTime = CalculateNextTime(task.ScheduledTime, task.FrequencyId);
@@ -97,6 +105,7 @@ namespace App.Service.Services
                 await UpdateNextTimeInDb(task.ReminderId, nextTime);
             }
         }
+
 
         // 🔥 SAAT KAYMASINI ENGELLEYEN VE ARALIKLARI AYARLAYAN MANTIK
         private DateTime? CalculateNextTime(DateTime lastScheduledTime, int frequencyId)
@@ -148,10 +157,33 @@ namespace App.Service.Services
 
             await cmd.ExecuteNonQueryAsync();
         }
+
+        private async Task<int> CreateExecutionLogAsync(
+    int reminderId,
+    DateTime scheduledTime)
+        {
+            using var conn = GetConnection();
+            await conn.OpenAsync();
+
+            var cmd = new SqlCommand(@"
+        INSERT INTO ReminderExecutions
+        (ReminderId, ScheduledTime)
+        VALUES (@ReminderId, @ScheduledTime);
+
+        SELECT CAST(SCOPE_IDENTITY() AS INT);
+    ", conn);
+
+            cmd.Parameters.AddWithValue("@ReminderId", reminderId);
+            cmd.Parameters.AddWithValue("@ScheduledTime", scheduledTime);
+
+            var executionId = (int)await cmd.ExecuteScalarAsync();
+            return executionId;
+        }
+
     }
 
 
-public class NotificationTaskDto
+    public class NotificationTaskDto
     {
         public int ReminderId { get; set; }
         public int UserId { get; set; }

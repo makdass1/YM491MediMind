@@ -88,6 +88,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "App.API.Controllers.ReminderExecutionsController",
+    "Method": "GetReport",
+    "RelativePath": "api/reminder-executions/report/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "App.API.Controllers.ReminderExecutionsController",
+    "Method": "Respond",
+    "RelativePath": "api/reminder-executions/respond",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "App.Service.Dtos.ReminderExecutionResponseRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "App.API.Controllers.ReminderController",
     "Method": "CreateReminder",
     "RelativePath": "api/reminders",
@@ -111,22 +143,6 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "App.API.Controllers.ReminderController",
-    "Method": "GetRemindersBySpecificUserId",
-    "RelativePath": "api/reminders/{userId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
     "ReturnTypes": []
   },
   {

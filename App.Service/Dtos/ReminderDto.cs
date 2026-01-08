@@ -34,4 +34,23 @@ namespace App.Service.Dtos
         public int FrequencyOfUseId { get; set; }
         public string Note { get; set; }
     }
+    public class ReminderExecutionResponseRequest
+    {
+        public int ExecutionId { get; set; }
+        public bool IsTaken { get; set; }
+    }
+    public class ReminderExecutionReportDto
+    {
+        public int ExecutionId { get; set; }
+
+        public int ReminderId { get; set; }
+        public string MedicineName { get; set; }
+
+        public DateTime ScheduledTime { get; set; }
+
+        public bool? IsTaken { get; set; } // null = cevap yok
+
+        public string StatusText { get; set; } // İçti / İçmedi / Cevap Yok
+    }
+
 }
