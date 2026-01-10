@@ -83,6 +83,57 @@ namespace App.Service.Services
 
             return (int)result;
         }
+        public async Task<int> GetDoctorIdByKeycloakIdAsync(Guid keycloakUserId)
+        {
+            using var conn = GetConnection();
+            await conn.OpenAsync();
+
+            var cmd = new SqlCommand(@"
+        SELECT Id
+        FROM Doctors
+        WHERE KeycloakUserId = @KeycloakId
+    ", conn);
+
+            cmd.Parameters.AddWithValue("@KeycloakId", keycloakUserId);
+
+            var result = await cmd.ExecuteScalarAsync();
+
+            if (result == null)
+                throw new Exception("Doctor not found in Doctors table");
+
+            return (int)result;
+        }
+        public async Task<DoctorDetailDto> GetDoctorByIdAsync(int doctorId)
+        {
+            using var conn = GetConnection();
+            await conn.OpenAsync();
+
+            var cmd = new SqlCommand(@"
+        SELECT 
+            Id,
+            Name,
+            Surname,
+            Registiration_number
+        FROM Doctors
+        WHERE Id = @Id
+    ", conn);
+
+            cmd.Parameters.AddWithValue("@Id", doctorId);
+
+            using var reader = await cmd.ExecuteReaderAsync();
+
+            if (!reader.Read())
+                throw new Exception("Doctor not found");
+
+            return new DoctorDetailDto
+            {
+                Id = reader.GetInt32(0),
+                Name = reader.GetString(1),
+                Surname = reader.GetString(2),
+                RegistirationNumber = reader.GetString(3)
+            };
+        }
+
 
     }
 }

@@ -38,17 +38,29 @@ namespace App.API
             });
         }
 
-
-        // 2️⃣ DOCTOR LOGIN (registrationNumber + password)
         [HttpPost("login/doctor")]
-        public async Task<IActionResult> DoctorLogin(DoctorLoginRequest request)
+        public async Task<IActionResult> DoctorLogin(
+            [FromBody] DoctorLoginRequest request,
+            [FromServices] ParalelDbService dbService)
         {
-            var token = await _authService.DoctorLoginAsync(
+            var tokenJson = await _authService.DoctorLoginAsync(
                 request.RegistrationNumber,
                 request.Password
             );
 
-            return Ok(token);
+            var token = JsonSerializer.Deserialize<TokenResponse>(tokenJson)!;
+
+            var keycloakUserId = JwtHelper.GetUserIdFromToken(token.access_token);
+
+            var doctorId = await dbService.GetDoctorIdByKeycloakIdAsync(keycloakUserId);
+
+            return Ok(new
+            {
+                accessToken = token.access_token,
+                doctorId = doctorId
+            });
         }
+
+
     }
 }

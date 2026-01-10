@@ -32,6 +32,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "App.API.DoctorsController",
+    "Method": "GetDoctor",
+    "RelativePath": "api/Doctors/getDoctor/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "App.API.Controllers.IdentityController",
     "Method": "Register",
     "RelativePath": "api/identity/register",

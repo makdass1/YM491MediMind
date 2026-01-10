@@ -9,5 +9,12 @@ namespace App.Service.Dtos
     public record DoctorInputDto(string Name, string Surname, string Registiration_number, string Password);
     public record DoctorOutputDto( string Name, string Surname, string Registiration_number);
 
+    public class DoctorDetailDto
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public string RegistirationNumber { get; set; }
+    }
 
 }
